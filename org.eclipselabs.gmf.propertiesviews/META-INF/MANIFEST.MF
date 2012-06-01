@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tabbed Properties for GMF Diagrams designing framework
+Bundle-SymbolicName: org.eclipselabs.gmf.propertiesviews;singleton:=true
+Bundle-Version: 1.9.1.qualifier
+Bundle-Activator: org.eclipselabs.gmf.propertiesviews.Activator
+Bundle-Vendor: Technical Direction
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui,
+ org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide,
+ org.eclipse.ui.ide
+Export-Package: org.eclipselabs.gmf.propertiesviews.core,
+ org.eclipselabs.gmf.propertiesviews.helpers,
+ org.eclipselabs.gmf.propertiesviews.tools
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
