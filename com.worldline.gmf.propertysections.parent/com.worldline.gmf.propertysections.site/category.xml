@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<site>
+   <description name="Worldline GMF Property Section Tooling Update Site">
+      Worldline GMF Property Section Tooling Update Site
+   </description>
+   <feature url="features/com.worldline.gmf.propertysections.feature_1.0.0.qualifier.jar" id="com.worldline.gmf.propertysections.feature" version="1.0.0.qualifier"/>
+   <feature url="features/com.worldline.gmf.propertysections.source.feature_1.0.0.qualifier.jar" id="com.worldline.gmf.propertysections.source.feature" version="1.0.0.qualifier"/>
+</site>
