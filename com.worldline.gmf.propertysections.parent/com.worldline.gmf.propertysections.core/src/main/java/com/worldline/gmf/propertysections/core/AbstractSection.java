@@ -9,8 +9,10 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.transaction.DemultiplexingListener;
 import org.eclipse.emf.transaction.NotificationFilter;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
+import org.eclipse.emf.transaction.util.TransactionUtil;
 import org.eclipse.gef.editparts.AbstractGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide.editor.FileDiagramEditor;
+import org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditor;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
@@ -200,7 +202,7 @@ public abstract class AbstractSection extends AbstractPropertySection {
 	@Override
 	public final void setInput(IWorkbenchPart part, ISelection selection) {
 		super.setInput(part, selection);
-		if (part instanceof FileDiagramEditor) {
+		if (part instanceof DiagramDocumentEditor) {
 			editingDomain = ((FileDiagramEditor) part).getEditingDomain();
 		}
 
@@ -222,6 +224,10 @@ public abstract class AbstractSection extends AbstractPropertySection {
 				}
 			}
 		}
+		
+		if (editingDomain == null && eObject != null)
+			editingDomain = TransactionUtil.getEditingDomain(eObject);
+		
 		updatePartsValues();
 	}
 
