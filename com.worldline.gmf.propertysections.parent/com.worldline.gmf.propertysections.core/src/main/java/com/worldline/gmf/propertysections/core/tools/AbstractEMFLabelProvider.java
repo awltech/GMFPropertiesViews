@@ -14,9 +14,9 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.gef.GraphicalEditPart;
 import org.eclipse.gef.editparts.AbstractGraphicalEditPart;
 import org.eclipse.gmf.runtime.notation.View;
-import org.eclipse.jface.viewers.ILabelProviderListener;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.jface.viewers.LabelProviderChangedEvent;
 import org.eclipse.swt.graphics.Image;
 
@@ -28,7 +28,7 @@ import org.eclipse.swt.graphics.Image;
  * @since $Date: 2008/02/07 14:29:11 $
  * 
  */
-public abstract class AbstractEMFLabelProvider extends org.eclipse.jface.viewers.LabelProvider {
+public abstract class AbstractEMFLabelProvider extends LabelProvider {
 
 	/**
 	 * Map containing bindings between ESF and Classes
@@ -138,7 +138,7 @@ public abstract class AbstractEMFLabelProvider extends org.eclipse.jface.viewers
 	/**
 	 * Event object instance describing a label provider state change.
 	 * 
-	 * @see ILabelProviderListener
+	 * @see org.eclipse.jface.viewers.ILabelProviderListener
 	 */
 	private LabelProviderChangedEvent event = new LabelProviderChangedEvent(this);
 
