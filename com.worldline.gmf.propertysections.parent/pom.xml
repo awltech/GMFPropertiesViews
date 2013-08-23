@@ -107,4 +107,12 @@
 		</plugins>
 	</build>
 
+	<modules>
+		<module>com.worldline.gmf.propertysections.core</module>
+		<module>com.worldline.gmf.propertysections.feature</module>
+		<module>com.worldline.gmf.propertysections.site</module>
+		<module>
+			com.worldline.gmf.propertysections.source.feature
+		</module>
+	</modules>
 </project>
