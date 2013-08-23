@@ -11,3 +11,6 @@ Require-Bundle: org.eclipse.ui.ide,
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Import-Package: org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide.editor
+Export-Package: com.worldline.gmf.propertysections.core,
+ com.worldline.gmf.propertysections.core.helpers,
+ com.worldline.gmf.propertysections.core.tools
