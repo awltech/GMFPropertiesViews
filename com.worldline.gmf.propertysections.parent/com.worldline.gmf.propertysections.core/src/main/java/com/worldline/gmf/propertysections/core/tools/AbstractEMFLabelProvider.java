@@ -91,10 +91,11 @@ public abstract class AbstractEMFLabelProvider extends LabelProvider {
 	 */
 	@Override
 	public final String getText(Object element) {
-		if (element instanceof IStructuredSelection)
-			element = ((IStructuredSelection) element).getFirstElement();
+		Object object = element;
+		if (object instanceof IStructuredSelection)
+			object = ((IStructuredSelection) object).getFirstElement();
 
-		EObject eObject = this.convertToEMF(element);
+		EObject eObject = this.convertToEMF(object);
 		if (eObject == null)
 			return "";
 		String className = "<" + eObject.eClass().getName() + ">";
