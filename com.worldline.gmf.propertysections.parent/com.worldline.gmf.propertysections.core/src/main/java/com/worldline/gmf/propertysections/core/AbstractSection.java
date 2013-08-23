@@ -11,7 +11,6 @@ import org.eclipse.emf.transaction.NotificationFilter;
 import org.eclipse.emf.transaction.TransactionalEditingDomain;
 import org.eclipse.emf.transaction.util.TransactionUtil;
 import org.eclipse.gef.editparts.AbstractGraphicalEditPart;
-import org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide.editor.FileDiagramEditor;
 import org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditor;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.jface.viewers.ISelection;
@@ -203,7 +202,7 @@ public abstract class AbstractSection extends AbstractPropertySection {
 	public final void setInput(IWorkbenchPart part, ISelection selection) {
 		super.setInput(part, selection);
 		if (part instanceof DiagramDocumentEditor) {
-			editingDomain = ((FileDiagramEditor) part).getEditingDomain();
+			editingDomain = ((DiagramDocumentEditor) part).getEditingDomain();
 		}
 
 		if (selection instanceof IStructuredSelection) {
