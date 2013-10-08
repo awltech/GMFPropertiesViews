@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: GMF tooling for Property Section definition
 Bundle-SymbolicName: com.worldline.gmf.propertysections.core
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.0.1.qualifier
 Bundle-Activator: com.worldline.gmf.propertysections.core.internal.Activator
 Bundle-Vendor: Worldline.com
 Require-Bundle: org.eclipse.ui.ide,

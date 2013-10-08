@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.worldline.gmf.propertysections</groupId>
 	<artifactId>com.worldline.gmf.propertysections.parent</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>GMF Property Sections tooling</name>
 	<description>Framework over Tabbed Properties View to help with the definition of Property Views over GMF based diagrams</description>
