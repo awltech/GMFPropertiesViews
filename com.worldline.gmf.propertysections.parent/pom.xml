@@ -16,7 +16,7 @@
 		<platform-tag>e43x</platform-tag>
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 		<release-type>SNAPSHOT</release-type>
-		<format>yyyyMMddHHmm'-${platform-version-name}-${release-type}'</format>
+		<format>yyyyMMddHHmm'-${release-type}'</format>
 		<project.module.updatesite>/DATA/xa/indivXAPluginsUpdSite</project.module.updatesite>
 	</properties>
 
