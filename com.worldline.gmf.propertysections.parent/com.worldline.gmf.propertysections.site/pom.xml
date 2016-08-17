@@ -7,4 +7,31 @@
   	<groupId>com.worldline.gmf.propertysections</groupId>
   	<version>1.0.1-SNAPSHOT</version>
   </parent>
+  <repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>bintray-mvanbesien-awltech</id>
+			<name>bintray</name>
+			<url>http://dl.bintray.com/mvanbesien/awltech</url>
+		</repository>
+	</repositories>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.worldline.mojo</groupId>
+				<artifactId>p2repo-index-plugin</artifactId>
+				<version>0.5.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate-index</goal>
+						</goals>
+						<phase>install</phase>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
